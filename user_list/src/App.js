@@ -118,7 +118,7 @@ function App() {
 
   useEffect(() => {
     // Fetch countries
-    axios.get('http://localhost:3000/getCountryData?name=VinaySingh@63')
+    axios.get('https://backendapi-oxog.onrender.com/getCountryData?name=VinaySingh@63')
       .then(response => setCountries(response.data))
       .catch(error => console.error('Error fetching countries:', error));
   }, []);
